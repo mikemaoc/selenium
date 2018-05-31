@@ -239,3 +239,29 @@
 2018-05-28 10:58:04,329 INFO  [Log] X 
 2018-05-28 10:58:04,329 INFO  [Log] X 
 2018-05-28 10:58:04,329 INFO  [Log] X 
+2018-05-31 14:47:54,836 INFO  [Log] **************************************************************************************** 
+2018-05-31 14:47:54,838 INFO  [Log] **************************************************************************************** 
+2018-05-31 14:47:54,838 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Selenium_Test_001       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-05-31 14:47:54,838 INFO  [Log] **************************************************************************************** 
+2018-05-31 14:47:54,838 INFO  [Log] **************************************************************************************** 
+2018-05-31 14:47:55,434 INFO  [Log]  Excel sheet opened 
+2018-05-31 14:48:00,731 INFO  [Log] New driver instantiated 
+2018-05-31 14:48:00,731 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2018-05-31 14:48:04,580 INFO  [Log] Web application launched 
+2018-05-31 14:48:04,587 INFO  [Log] Username picked from Excel is testuser_1 
+2018-05-31 14:48:04,587 INFO  [Log] Password picked from Excel is Test@123 
+2018-05-31 14:48:04,599 INFO  [Log] My Account link element found 
+2018-05-31 14:48:06,801 INFO  [Log] Click action performed on My Account link 
+2018-05-31 14:48:06,808 INFO  [Log] Username text box found 
+2018-05-31 14:48:06,844 INFO  [Log] Username entered in the Username text box 
+2018-05-31 14:48:06,850 INFO  [Log] Password text box found 
+2018-05-31 14:48:06,866 INFO  [Log] Password entered in the Password text box 
+2018-05-31 14:48:06,874 INFO  [Log] Submit button found 
+2018-05-31 14:48:07,101 INFO  [Log] Click action performed on Submit button 
+2018-05-31 14:48:07,102 INFO  [Log] Click action is perfomred on Log Out link 
+2018-05-31 14:48:07,871 INFO  [Log] Browser closed 
+2018-05-31 14:48:08,007 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-05-31 14:48:08,008 INFO  [Log] X 
+2018-05-31 14:48:08,008 INFO  [Log] X 
+2018-05-31 14:48:08,008 INFO  [Log] X 
+2018-05-31 14:48:08,008 INFO  [Log] X 
