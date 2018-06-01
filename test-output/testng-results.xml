@@ -14,18 +14,18 @@
       <![CDATA[Se da clic en ingresar ]]>
     </line>
     <line>
-      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_05_31 18_13_35.png'/>]]>
+      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_01 13_30_00.png'/>]]>
     </line>
     <line>
-      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_05_31 18_13_38.png'/>]]>
+      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_01 13_30_03.png'/>]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-05-31T23:13:30Z" name="Default suite" finished-at="2018-05-31T23:13:38Z" duration-ms="7829">
+  <suite started-at="2018-06-01T18:29:56Z" name="Default suite" finished-at="2018-06-01T18:30:03Z" duration-ms="7251">
     <groups>
     </groups>
-    <test started-at="2018-05-31T23:13:30Z" name="Default test" finished-at="2018-05-31T23:13:38Z" duration-ms="7829">
+    <test started-at="2018-06-01T18:29:56Z" name="Default test" finished-at="2018-06-01T18:30:03Z" duration-ms="7251">
       <class name="automationFramework.EjecutaPrueba">
-        <test-method signature="Login()[pri:1, instance:automationFramework.EjecutaPrueba@6236eb5f]" started-at="2018-05-31T23:13:30Z" name="Login" description="Este caso demuestra los pasos para acceder al sistema de nomina" finished-at="2018-05-31T23:13:38Z" duration-ms="7806" status="PASS">
+        <test-method signature="Login()[pri:1, instance:automationFramework.EjecutaPrueba@69fb6037]" started-at="2018-06-01T18:29:56Z" name="Login" description="Este caso demuestra los pasos para acceder al sistema de nomina" finished-at="2018-06-01T18:30:03Z" duration-ms="7225" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[navegamos a la url: http://192.168.13.142/NomifacilTest/Default.aspx]]>
@@ -40,14 +40,14 @@
               <![CDATA[Se da clic en ingresar ]]>
             </line>
             <line>
-              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_05_31 18_13_35.png'/>]]>
+              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_01 13_30_00.png'/>]]>
             </line>
             <line>
-              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_05_31 18_13_38.png'/>]]>
+              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_01 13_30_03.png'/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="case2()[pri:2, instance:automationFramework.EjecutaPrueba@6236eb5f]" started-at="2018-05-31T23:13:38Z" name="case2" description="este es un segundo caso vacio" finished-at="2018-05-31T23:13:38Z" duration-ms="2" status="FAIL">
+        <test-method signature="case2()[pri:2, instance:automationFramework.EjecutaPrueba@69fb6037]" started-at="2018-06-01T18:30:03Z" name="case2" description="este es un segundo caso vacio" finished-at="2018-06-01T18:30:03Z" duration-ms="4" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [12] but found [11]]]>
