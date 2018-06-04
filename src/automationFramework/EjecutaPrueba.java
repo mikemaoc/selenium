@@ -2,16 +2,14 @@ package automationFramework;
 
 
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
-import org.junit.Assert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +21,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class EjecutaPrueba {
 
@@ -70,7 +67,7 @@ takeScreenshoot(driver);
 locateElements.btnIngresar.click();
 waitSeconds(2);
 takeScreenshoot(driver);
-	Assert.assertTrue("Ocurrio un error al ingresar al sistema",driver.getPageSource().contains("Bienvenido al sistema de nómina")==true);
+	AssertJUnit.assertTrue("Ocurrio un error al ingresar al sistema",driver.getPageSource().contains("Bienvenido al sistema de nómina")==true);
 	//driver.quit();
 
 
@@ -105,7 +102,7 @@ public EjecutaPrueba() {
 @Test(priority=2, description="este es un segundo caso vacio")
 public void case2() {
 	System.out.println("Segunda prueba");
-	assertEquals(11, 12);
+	AssertJUnit.assertEquals(11, 12);
 }
 	
 

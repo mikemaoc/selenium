@@ -5,8 +5,8 @@ public class Constant {
 	 public static final String P_USER="denisse@mltic.com";//"denisse@mltic.com";
 	 public static final String P_PASS="gobdigital2";//"gobdigital2";
 	 public static final String Path_TestData = "C:/Users/molvera//eclipse-workspace//QA//src//testData//";//ruta del archivo
-	 public static final String File_TestData = "TestData - copia.xlsx";//"TestData.xlsx";//nombre del archivo
-	 public static final String File_TestDataEmp = "TestData.xlsx";//"AltaEmpleados.xlsx";//nombre del archivo
+	 public static final String File_TestData =  "AltaEmpleados.xlsx";//"TestData - copia.xlsx";//"TestData.xlsx";//nombre del archivo
+	 public static final String File_TestDataEmp = "AltaEmpleados.xlsx";//nombre del archivo//"TestData.xlsx";
 	 public static final String File_sheet = "H1";//hoja del archivo
 	 public static final String DriverName = "webdriver.gecko.driver";//"webdriver.chrome.driver";
 	 public static final String RutaDriv="C:\\Users\\molvera\\Documents\\selenium\\geckodriverv0.19.1win64\\geckodriver.exe";//"C:\\Users\\molvera\\Documents\\selenium\\chromedriver\\chromedriver.exe";
