@@ -4,7 +4,7 @@ public class Hii {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("algooooo");
+System.out.println("prueba");
 	}
 
 }

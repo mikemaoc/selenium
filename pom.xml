@@ -32,12 +32,20 @@
 	</dependency>	
 	<dependency>
 	  <groupId>junit</groupId>
-	  <artifactId>junit</artifactId>
+	  <artifactId>junit</artifactId>	  
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 	<dependency>
-	  <groupId>org.hellojavaer</groupId>
-	  <artifactId>poi-excel-utils</artifactId>
+	    <groupId>org.apache.poi</groupId>
+	    <artifactId>poi-ooxml</artifactId>
+	    <version>3.8-beta3</version>
 	</dependency>
+<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+<dependency>
+    <groupId>dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>1.6.1</version>
+</dependency>	
 	<dependency>
 	   <groupId>log4j</groupId>
 	   <artifactId>log4j</artifactId>
@@ -84,11 +92,6 @@
   			<groupId>junit</groupId>
   			<artifactId>junit</artifactId>
   			<version>4.12</version>
-  		</dependency>
-  		<dependency>
-  			<groupId>org.hellojavaer</groupId>
-  			<artifactId>poi-excel-utils</artifactId>
-  			<version>1.0.0</version>
   		</dependency>
   		<dependency>
   			<groupId>log4j</groupId>

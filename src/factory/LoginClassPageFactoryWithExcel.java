@@ -38,6 +38,7 @@ public class LoginClassPageFactoryWithExcel extends Utilities{
 			String sPassword = ExcelUtils.getCellData(i, 2);
 			driver.manage().window().maximize();
 			driver.navigate().to(url);
+			System.out.println(url);
 			locateElements.LoginMethod(sUserName,sPassword);
 			System.out.println("Login test "+i+" usuario logeado: "+sUserName);
 						 
