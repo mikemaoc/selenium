@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 04 12:20:24 CDT 2018</td>
+<td>Started on:</td><td>Mon Jun 11 17:49:08 CDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7752 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7352 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='automationFramework.EjecutaPrueba.case2()'><b>case2</b><br>Test class: automationFramework.EjecutaPrueba<br>Test method: este es un segundo caso vacio</td>
-<td><div><pre>java.lang.AssertionError: expected [12] but found [11]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at org.testng.Assert.assertEquals(Assert.java:662)
-	at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:108)
+<td><div><pre>java.lang.AssertionError: expected:&lt;11&gt; but was:&lt;12&gt;
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:245)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:252)
+	at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -109,15 +108,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1697441364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1697441364'><pre>java.lang.AssertionError: expected [12] but found [11]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at org.testng.Assert.assertEquals(Assert.java:662)
-	at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:108)
+</pre></div><a href='#' onClick='toggleBox("stack-trace425107133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace425107133'><pre>java.lang.AssertionError: expected:&lt;11&gt; but was:&lt;12&gt;
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:245)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:252)
+	at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -145,7 +143,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>automationFramework.EjecutaPrueba@69fb6037</td></tr>
+<td>automationFramework.EjecutaPrueba@dd0c991</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -156,21 +154,21 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='automationFramework.EjecutaPrueba.Login()'><b>Login</b><br>Test class: automationFramework.EjecutaPrueba<br>Test method: Este caso demuestra los pasos para acceder al sistema de nomina<br/>
-<a href="#Output-727497138" onClick='toggleBox("Output-727497138", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-268379633" onClick='toggleBox("Output-268379633", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-727497138" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-727497138">
+<a href="#Output-268379633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-268379633">
 navegamos a la url: http://192.168.13.142/NomifacilTest/Default.aspx<br/>
 Se ingresa el usuario denisse@mltic.com<br/>
 Se ingresa el password gobdigital2<br/>
 Se da clic en ingresar <br/>
-<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_04 12_20_29.png'/><br/>
-<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_04 12_20_32.png'/><br/>
+<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_11 17_49_12.png'/><br/>
+<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_11 17_49_15.png'/><br/>
 </div>
 </td>
 <td></td>
 <td>7</td>
-<td>automationFramework.EjecutaPrueba@69fb6037</td></tr>
+<td>automationFramework.EjecutaPrueba@dd0c991</td></tr>
 </table><p>
 </body>
 </html>

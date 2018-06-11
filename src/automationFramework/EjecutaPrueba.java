@@ -101,7 +101,7 @@ public EjecutaPrueba() {
 	
 @Test(priority=2, description="este es un segundo caso vacio")
 public void case2() {
-	System.out.println("Segunda prueba");
+	System.out.println("Segunda prueba xxx");
 	AssertJUnit.assertEquals(11, 12);
 }
 	

@@ -1,5 +1,6 @@
 package practicaTestNg;
 
+import org.apache.log4j.Priority;
 import org.testng.annotations.Test;
 //http://toolsqa.com/selenium-webdriver/testng-introduction/
 public class Dependent {
