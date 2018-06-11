@@ -8,13 +8,21 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Failed suite [Failed suite [Default suite]]</th></tr>
-<tr><td><a href="#t0">Default test(failed)(failed)</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31</td><td></td><td></td></tr>
+<tr><th colspan="7">Failed suite [Failed suite [Failed suite [Default suite]]]</th></tr>
+<tr><td><a href="#t0">Default test(failed)</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">7,309</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [Failed suite [Default suite]]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test(failed)(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">automationFramework.EjecutaPrueba</td><td><a href="#m0">case2</a></td><td rowspan="1">1528757449187</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [Failed suite [Failed suite [Default suite]]]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">automationFramework.EjecutaPrueba</td><td><a href="#m0">Login</a></td><td rowspan="1">1528760371529</td><td rowspan="1">7293</td></tr><tr class="failedeven"><td><a href="#m1">case2</a></td><td rowspan="1">1528760378824</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Default test(failed)(failed)</h2><h3 id="m0">automationFramework.EjecutaPrueba#case2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;11&gt; but was:&lt;12&gt;
-	at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:105)
+<h2>Default test(failed)</h2><h3 id="m0">automationFramework.EjecutaPrueba#Login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">navegamos a la url: http://192.168.13.142/NomifacilTest/Default.aspx<br/>Se ingresa el usuario denisse@mltic.com<br/>Se ingresa el password gobdigital2<br/>Se da clic en ingresar <br/><img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_11 18_39_35.png'/><br/><img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_11 18_39_38.png'/></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/junit/Assert
+	at automationFramework.EjecutaPrueba.Login(EjecutaPrueba.java:73)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 25 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">automationFramework.EjecutaPrueba#case2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [12] but found [11]
+	at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:108)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
