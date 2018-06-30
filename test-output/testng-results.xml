@@ -14,18 +14,18 @@
       <![CDATA[Se da clic en ingresar ]]>
     </line>
     <line>
-      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_11 18_39_35.png'/>]]>
+      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_12 18_37_30.png'/>]]>
     </line>
     <line>
-      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_11 18_39_38.png'/>]]>
+      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_12 18_37_33.png'/>]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-06-11T23:39:31Z" name="Failed suite [Failed suite [Failed suite [Default suite]]]" finished-at="2018-06-11T23:39:38Z" duration-ms="7309">
+  <suite started-at="2018-06-12T23:37:25Z" name="Failed suite [Failed suite [Failed suite [Default suite]]]" finished-at="2018-06-12T23:37:33Z" duration-ms="7732">
     <groups>
     </groups>
-    <test started-at="2018-06-11T23:39:31Z" name="Default test(failed)" finished-at="2018-06-11T23:39:38Z" duration-ms="7309">
+    <test started-at="2018-06-12T23:37:25Z" name="Default test(failed)" finished-at="2018-06-12T23:37:33Z" duration-ms="7732">
       <class name="automationFramework.EjecutaPrueba">
-        <test-method signature="Login()[pri:1, instance:automationFramework.EjecutaPrueba@10683d9d]" started-at="2018-06-11T23:39:31Z" name="Login" description="Este caso demuestra los pasos para acceder al sistema de nomina" finished-at="2018-06-11T23:39:38Z" duration-ms="7293" status="FAIL">
+        <test-method signature="Login()[pri:1, instance:automationFramework.EjecutaPrueba@10683d9d]" started-at="2018-06-12T23:37:25Z" name="Login" description="Este caso demuestra los pasos para acceder al sistema de nomina" finished-at="2018-06-12T23:37:33Z" duration-ms="7716" status="FAIL">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[org/junit/Assert]]>
@@ -79,14 +79,14 @@ at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
               <![CDATA[Se da clic en ingresar ]]>
             </line>
             <line>
-              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_11 18_39_35.png'/>]]>
+              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_12 18_37_30.png'/>]]>
             </line>
             <line>
-              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_11 18_39_38.png'/>]]>
+              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_12 18_37_33.png'/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="case2()[pri:2, instance:automationFramework.EjecutaPrueba@10683d9d]" started-at="2018-06-11T23:39:38Z" name="case2" description="este es un segundo caso vacio" finished-at="2018-06-11T23:39:38Z" duration-ms="2" status="FAIL">
+        <test-method signature="case2()[pri:2, instance:automationFramework.EjecutaPrueba@10683d9d]" started-at="2018-06-12T23:37:33Z" name="case2" description="este es un segundo caso vacio" finished-at="2018-06-12T23:37:33Z" duration-ms="1" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [12] but found [11]]]>

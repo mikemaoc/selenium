@@ -1,5 +1,8 @@
 package automationFramework;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -69,12 +72,27 @@ public class AbcCatalogos extends Utilities {
 		Configuraciones.menuCatalogos(driver).click();
 		//waitSeconds(3);
 		//SE CREA UN ELEMENTO PARA ACCEDER A LOS METODOS POR UNA UNICA INSTANCIA DE LA CLASE
-		AltaCatalogo locateElements =  PageFactory.initElements(driver, AltaCatalogo.class);
+		AltaCatalogo locateElements 
+		=  PageFactory.initElements(driver, AltaCatalogo.class);
 		
 		//locateElements.seleccionaCatalogo(driver,"Catálogo de Áreas");
 		locateElements.testCatalogo(driver);
 		waitSeconds(1);
-		locateElements.ExportaPdfExcel("1");
+		locateElements.ExportaPdfExcel("2");
+		waitSeconds(3);
+		//se hace una pirateria para poder dar enter y descargar el archivo
+		Robot rb =new Robot();
+		rb.keyPress(KeyEvent.VK_D);
+		rb.keyRelease(KeyEvent.VK_D);
+		/*rb.keyPress(KeyEvent.VK_DOWN);
+		rb.keyRelease(KeyEvent.VK_DOWN);*/
+		
+		
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+		
+		//driver.switchTo().alert().accept();
+		
 		//waitSeconds(1);
 		//locateElements.alta();
 		//waitSeconds(1);

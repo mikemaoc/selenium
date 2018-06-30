@@ -8,7 +8,7 @@
           <include name="Login"/>
           <include name="case2"/>
         </methods>
-      </class> <!-- automationFramework.EjecutaPrueba -->
+      </class> <!-- practicaTestNg.Asserts -->
     </classes>
   </test> <!-- Default test(failed)(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

@@ -109,6 +109,7 @@ public class AltaCatalogo extends Utilities {
 		int t = Integer.parseInt(tipo);
 		if(t==1) {
 			btnExportaExcel.click();
+			
 		}else if (t==2)
 		{
 			btnExportaPdf.click();
