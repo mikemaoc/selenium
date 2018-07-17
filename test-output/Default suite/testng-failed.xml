@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationFramework.EjecutaPrueba">
+      <class name="automationFramework.CorreCalculoNomina">
         <methods>
-          <include name="case2"/>
+          <include name="InicializaDriver"/>
+          <include name="ConfiguraCalculo"/>
+          <include name="cierraPagina"/>
         </methods>
-      </class> <!-- automationFramework.EjecutaPrueba -->
+      </class> <!-- automationFramework.CorreCalculoNomina -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

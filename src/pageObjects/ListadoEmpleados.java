@@ -14,8 +14,11 @@ public class ListadoEmpleados extends Utilities{
 	@FindBy(id="gs_No.Emp") WebElement noEmpleado;	
 	@FindBy(xpath="/html/body/form/div[6]/div/div[3]/table/tbody/tr/td/div/div[3]/div[3]/div/table/tbody/tr[2]/td[6]") WebElement seleccionaRegistro;
 	@FindBy(id="btnHistorias") WebElement btnHistorias;
-	@FindBy(id="ui-id-29") WebElement tabHistoriaEmpleado;	
+	//@FindBy(id="ui-id-29") WebElement tabHistoriaEmpleado;
+	@FindBy(linkText="Historia del Empleado")  WebElement tabHistoriaEmpleado;
 	@FindBy(id="cboCatHistoria")  WebElement cboCatHistoria;
+	
+	
 	@FindBy(id="btnCerrar")  WebElement btnCerrar;
 	
 	
@@ -37,6 +40,7 @@ public class ListadoEmpleados extends Utilities{
 	
 	public void accedeTabHistorias(String PcboCatHistoria) {
 		tabHistoriaEmpleado.click();
+		System.out.println("entra al ");
 		new Select(cboCatHistoria).selectByVisibleText(PcboCatHistoria);
 	}
 	

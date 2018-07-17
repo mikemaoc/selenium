@@ -1,136 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[navegamos a la url: http://192.168.13.142/NomifacilTest/Default.aspx]]>
+      <![CDATA[se inicializa el navegador y se redirige a la url http://192.168.13.142/NomifacilTest/Default.aspx]]>
     </line>
     <line>
       <![CDATA[Se ingresa el usuario denisse@mltic.com]]>
     </line>
     <line>
-      <![CDATA[Se ingresa el password gobdigital2]]>
+      <![CDATA[Se ingresa el pass gobdigital2]]>
     </line>
     <line>
-      <![CDATA[Se da clic en ingresar ]]>
+      <![CDATA[Clic en boton ingresar]]>
     </line>
     <line>
-      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_12 18_37_30.png'/>]]>
+      <![CDATA[la url actual es: Home Page]]>
     </line>
     <line>
-      <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_12 18_37_33.png'/>]]>
+      <![CDATA[estatus de loggin: true]]>
+    </line>
+    <line>
+      <![CDATA[Se ingresa al modulo de nominas]]>
+    </line>
+    <line>
+      <![CDATA[Se camos clic en el menu de calculo]]>
+    </line>
+    <line>
+      <![CDATA[Se selecciona la compañia: 1.-OPERARIOS]]>
+    </line>
+    <line>
+      <![CDATA[Se selecciona el año: 2018]]>
+    </line>
+    <line>
+      <![CDATA[Se selecciona el periodo: 27 - 2018-07-03 - 2018-07-09 - ABIERTO]]>
+    </line>
+    <line>
+      <![CDATA[Damos clic en el menu calculo]]>
+    </line>
+    <line>
+      <![CDATA[Se ejecuta calculo individual]]>
+    </line>
+    <line>
+      <![CDATA[Se ejecuta calculo individual para el empleado: 01003]]>
+    </line>
+    <line>
+      <![CDATA[se cierra la pagina con exito]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-06-12T23:37:25Z" name="Failed suite [Failed suite [Failed suite [Default suite]]]" finished-at="2018-06-12T23:37:33Z" duration-ms="7732">
+  <suite started-at="2018-07-17T22:42:47Z" name="Default suite" finished-at="2018-07-17T22:43:29Z" duration-ms="42207">
     <groups>
     </groups>
-    <test started-at="2018-06-12T23:37:25Z" name="Default test(failed)" finished-at="2018-06-12T23:37:33Z" duration-ms="7732">
-      <class name="automationFramework.EjecutaPrueba">
-        <test-method signature="Login()[pri:1, instance:automationFramework.EjecutaPrueba@10683d9d]" started-at="2018-06-12T23:37:25Z" name="Login" description="Este caso demuestra los pasos para acceder al sistema de nomina" finished-at="2018-06-12T23:37:33Z" duration-ms="7716" status="FAIL">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/junit/Assert]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/junit/Assert
-at automationFramework.EjecutaPrueba.Login(EjecutaPrueba.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-Caused by: java.lang.ClassNotFoundException: org.junit.Assert
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+    <test started-at="2018-07-17T22:42:47Z" name="Default test" finished-at="2018-07-17T22:43:29Z" duration-ms="42207">
+      <class name="automationFramework.CorreCalculoNomina">
+        <test-method is-config="true" signature="InicializaDriver()[pri:0, instance:automationFramework.CorreCalculoNomina@355ce81c]" started-at="2018-07-17T22:42:44Z" name="InicializaDriver" description="Este metodo inicializa el navegador" finished-at="2018-07-17T22:42:47Z" duration-ms="2864" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[navegamos a la url: http://192.168.13.142/NomifacilTest/Default.aspx]]>
+              <![CDATA[se inicializa el navegador y se redirige a la url http://192.168.13.142/NomifacilTest/Default.aspx]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- InicializaDriver -->
+        <test-method signature="IngresaSistema()[pri:1, instance:automationFramework.CorreCalculoNomina@355ce81c]" started-at="2018-07-17T22:42:47Z" name="IngresaSistema" description="Este caso de prueba navega al sistema e intenta loggearse" finished-at="2018-07-17T22:42:48Z" duration-ms="827" status="PASS">
+          <reporter-output>
             <line>
               <![CDATA[Se ingresa el usuario denisse@mltic.com]]>
             </line>
             <line>
-              <![CDATA[Se ingresa el password gobdigital2]]>
+              <![CDATA[Se ingresa el pass gobdigital2]]>
             </line>
             <line>
-              <![CDATA[Se da clic en ingresar ]]>
-            </line>
-            <line>
-              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO1_2018_06_12 18_37_30.png'/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src='C:\Users\molvera\Documents\selenium\ScreenShoot\IMAGE_NO2_2018_06_12 18_37_33.png'/>]]>
+              <![CDATA[Clic en boton ingresar]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="case2()[pri:2, instance:automationFramework.EjecutaPrueba@10683d9d]" started-at="2018-06-12T23:37:33Z" name="case2" description="este es un segundo caso vacio" finished-at="2018-06-12T23:37:33Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [12] but found [11]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [12] but found [11]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at automationFramework.EjecutaPrueba.case2(EjecutaPrueba.java:108)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- IngresaSistema -->
+        <test-method signature="compruebaUrl()[pri:2, instance:automationFramework.CorreCalculoNomina@355ce81c]" started-at="2018-07-17T22:42:48Z" name="compruebaUrl" description="Este caso de prueba comprueba la direccion del sistema" finished-at="2018-07-17T22:42:48Z" duration-ms="7" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[la url actual es: Home Page]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- automationFramework.EjecutaPrueba -->
-    </test> <!-- Default test(failed) -->
-  </suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->
+        </test-method> <!-- compruebaUrl -->
+        <test-method signature="compruebaIngreso()[pri:3, instance:automationFramework.CorreCalculoNomina@355ce81c]" started-at="2018-07-17T22:42:48Z" name="compruebaIngreso" description="Este caso de prueba comprueba el correcto acceso al sistema" finished-at="2018-07-17T22:42:51Z" duration-ms="3044" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[estatus de loggin: true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- compruebaIngreso -->
+        <test-method signature="ConfiguraCalculo()[pri:4, instance:automationFramework.CorreCalculoNomina@355ce81c]" started-at="2018-07-17T22:42:51Z" name="ConfiguraCalculo" description="Este caso de prueba accede al modulo de nominas y selecciona un periodo" finished-at="2018-07-17T22:43:29Z" duration-ms="38304" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Se ingresa al modulo de nominas]]>
+            </line>
+            <line>
+              <![CDATA[Se camos clic en el menu de calculo]]>
+            </line>
+            <line>
+              <![CDATA[Se selecciona la compañia: 1.-OPERARIOS]]>
+            </line>
+            <line>
+              <![CDATA[Se selecciona el año: 2018]]>
+            </line>
+            <line>
+              <![CDATA[Se selecciona el periodo: 27 - 2018-07-03 - 2018-07-09 - ABIERTO]]>
+            </line>
+            <line>
+              <![CDATA[Damos clic en el menu calculo]]>
+            </line>
+            <line>
+              <![CDATA[Se ejecuta calculo individual]]>
+            </line>
+            <line>
+              <![CDATA[Se ejecuta calculo individual para el empleado: 01003]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ConfiguraCalculo -->
+        <test-method is-config="true" signature="cierraPagina()[pri:0, instance:automationFramework.CorreCalculoNomina@355ce81c]" started-at="2018-07-17T22:43:29Z" name="cierraPagina" description="Este metodo cierra el navegador" finished-at="2018-07-17T22:43:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[se cierra la pagina con exito]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cierraPagina -->
+      </class> <!-- automationFramework.CorreCalculoNomina -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

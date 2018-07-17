@@ -18,8 +18,8 @@ public class NominasConsultaEmpleado extends Utilities{
 
 		inicializaDriverProperty(Constant.DriverName, Constant.RutaDriv);		
 		driver = new FirefoxDriver();		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);		 
-		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);		
+		driver.manage().window().maximize();
 		SignIn_Action.Execute(driver, Constant.URL, Constant.P_USER, Constant.P_PASS);
 		Home_Page.modNominas(driver).click();
 		waitSeconds(3);		
@@ -49,5 +49,13 @@ public class NominasConsultaEmpleado extends Utilities{
 		locateElements.accedeTabHistorias("Salarios");
 		waitSeconds(2);
 		locateElements.Salir();
+		waitSeconds(2);
+		locateElements.Salir();
+		waitSeconds(2);
+		Home_Page.lnk_MyAccount(driver).click();
+		waitSeconds(2);
+		Home_Page.lnk_LogOut(driver).click();
+		driver.close();
+		
 	}
 }
