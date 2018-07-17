@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -130,10 +132,11 @@ public class HomeNominas extends Utilities {
 	  }
 	  
 	  
-	  public static void radioTipoCalculo(WebDriver driver, int opcion, String noempx) {
+	  public static void radioTipoCalculo(WebDriver driver, int opcion, String noempx, String ruta) throws IOException {
 		  switch(opcion) {
 		  case 1:
 			  element = driver.findElement(By.xpath("//*[@id=\"rbTotal\"]"));//total
+			  takeScreenshoot(driver,ruta);
 			  waitSeconds(1);
 			  element.click();
 			  waitSeconds(1);
@@ -141,19 +144,23 @@ public class HomeNominas extends Utilities {
 			  waitSeconds(1);
 			  element.click();
 			  Reporter.log("Se ejecuta calculo general");
+			  takeScreenshoot(driver,ruta);
 			  break;
 		  case 2:
 			  element = driver.findElement(By.xpath("//*[@id=\"rbIndividual\"]"));//individual
 			  waitSeconds(1);
 			  element.click();
 			  Reporter.log("Se ejecuta calculo individual");
+			  takeScreenshoot(driver,ruta);
 			  waitSeconds(1);
 			  element = driver.findElement(By.xpath("//*[@id=\"btCalcular\"]"));//btncalcular
 			  element.click();
+			  takeScreenshoot(driver,ruta);
 			  waitSeconds(3);
 			  element = driver.findElement(By.xpath("//*[@id=\"txtClave\"]"));//busqueda Emp
 			  waitSeconds(2);
 			  element.sendKeys(noempx,Keys.RETURN);
+			  takeScreenshoot(driver,ruta);
 			  waitSeconds(2);
 			  element=driver.findElement(By.xpath("//*[@id=\"btGuardarCalcInd\"]"));//btnGuardar
 			  waitSeconds(2);
@@ -163,6 +170,7 @@ public class HomeNominas extends Utilities {
 			  waitSeconds(2);
 			  element.click();
 			  Reporter.log("Se ejecuta calculo individual para el empleado: "+noempx);
+			  takeScreenshoot(driver,ruta);
 			  break;
 			  default:
 			  System.out.println("Seleccione una opcion correcta: 1 para calculo total [noemp no es requerido puede ir '''' ''''], 2 para calculo individual[ llenar noemp requerido]");

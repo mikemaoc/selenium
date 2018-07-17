@@ -3,6 +3,8 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -18,6 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 public class Utilities {
 
     static int i=0;	
@@ -196,7 +199,7 @@ public void waitForPageLoaded(WebDriver driver) {
     wait.until(pageLoadCondition);
 }
 
-
+/*
 public static  void takeScreenshoot(WebDriver driver) throws IOException
 {
     Date d = new Date(0);
@@ -209,8 +212,26 @@ public static  void takeScreenshoot(WebDriver driver) throws IOException
 	FileHandler.copy(scrFile,  new File("C:\\Users\\molvera\\Documents\\selenium\\ScreenShoot\\image"+sdf.format(d)+"_"+i+".png"));      //your screenshot path and convert date string to SimpleDateFormat because windows can't capture screenshot with(:)
 	i++;
 }
+*/
+
+public static   void takeScreenshoot(WebDriver driver, String ruta) throws IOException
+{
+	 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+	   LocalDateTime now = LocalDateTime.now();  
+	   System.out.println(dtf.format(now).toString().replace(":", "_").replace("/", "_"));  
 
 
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");         // Your each screenshot will be taken as this format "Year-Month-Date-Hours-Minutes-Seconds"
+    File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    String rutaArch=ruta+"\\IMAGE_NO"+i+"_"+dtf.format(now).toString().replace(":", "_").replace("/", "_")+".png";
+      
+    
+
+	FileHandler.copy(scrFile,  new File(rutaArch));      //your screenshot path and convert date string to SimpleDateFormat because windows can't capture screenshot with(:)
+	i++;
+	
+	Reporter.log("<img src='"+rutaArch+"'/>");
+}
 
 
 
